@@ -8,3 +8,13 @@ print(c)
 myName = "Lilia"
 
 bed = True
+
+def say_hello():
+  print("hello")
+
+say_hello()
+
+def alert(error):
+  print("warning",error)
+
+alert("e")
