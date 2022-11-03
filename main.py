@@ -18,3 +18,11 @@ def alert(error):
   print("warning",error)
 
 alert("e")
+
+age = int(input("Your age:\n"))
+if age<18:
+  print("You can't drink!")
+elif age>=18 and age<35:
+  print("You can drink beer")
+else:
+  print("Go ahead")
