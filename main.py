@@ -26,3 +26,12 @@ elif age>=18 and age<35:
   print("You can drink beer")
 else:
   print("Go ahead")
+
+
+list = ["Mon", "Tue", "Wed"]
+tuple = ("Mon", "Tue", "Wed") # immutable
+dict = {
+  'name': "Lilia",
+  'age': 12,
+  'alive': True,
+}
