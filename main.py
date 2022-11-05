@@ -35,3 +35,7 @@ dict = {
   'age': 12,
   'alive': True,
 }
+
+print(list[2])
+print(tuple[-2])
+print(dict)
