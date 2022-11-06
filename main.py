@@ -39,3 +39,17 @@ dict = {
 print(list[2])
 print(tuple[-2])
 print(dict)
+
+
+websites = (
+  "google.com",
+  "airbnb.com",
+  "https://twitter.com",
+  "facebook.com",
+  "https://ticktok.com"
+)
+
+for website in websites:
+  if not website.startswith("https://"):
+    website = f"https://{website}"
+  print(website)
