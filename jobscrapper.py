@@ -10,3 +10,5 @@ if response.status_code != 200:
 else:
   soup = BeautifulSoup(response.text, "html.parser")
   jobs = (soup.find_all('section', class_="jobs"))
+
+  
