@@ -5,6 +5,7 @@ base_url = "https://weworkremotely.com/remote-jobs/serch?term="
 search_term = "python"
 
 response = get(f"{base_url}{search_term}")
+result = []
 if response.status_code != 200:
   print("Can't request website")
 else:
@@ -20,5 +21,12 @@ else:
       anchor = anchors[1]
       link =  anchor['href']
       company, kind, region = anchor.find_all('span', class_="company")
-      print(company, kind, region)
-      title = anchor.find('span', class_='title')
+      # print(company, kind, region)
+      position = anchor.find('span', class_='title')
+      job_data = {
+        'company': company.string,
+        'region': region.string,
+        'position': position.string,
+      }
+      result.append(job_data)
+print(result)
